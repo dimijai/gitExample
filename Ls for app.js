@@ -27,20 +27,4 @@ userRecords.push({
 })
 
 localStorage.setItem("users", JSON.stringify(userRecords));
-
-
-  // Create new li element
-  var li = document.createElement('li');
-  // Add class
-  li.className = 'list-group-user';
-
-  // Add text node with input value
-  li.appendChild(document.createTextNode(newUserName));
-  li.appendChild(document.createTextNode(" " + "-" + " " + newUserId));
-  li.appendChild(document.createTextNode(" " + "-" + " " + newUserPhone));
-  li.appendChild(document.createTextNode(" " + "-" + " " + newUserDate));
-  li.appendChild(document.createTextNode(" " + "-" + " " + newUserTime));
-
-  // Append li to list
-  userList.appendChild(li);
 }
