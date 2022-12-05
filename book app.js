@@ -26,7 +26,7 @@ userRecords.push({
   "time":newUserTime
 })
 
-localStorage.setItem("users", JSON.stringify(userRecords));
+localStorage.setItem("users", JSON.stringify(userRecords))?localStorage.setItem("users", JSON.stringify(userRecords)):[]
 
 
   // Create new li element
