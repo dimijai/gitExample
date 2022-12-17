@@ -1,20 +1,20 @@
 class Student {
-    constructor(name, age, phNo, BrdMarks){
+    constructor(name, age, phNo, brdMarks){
       this.name = name;
       this.age = age;
       this.phNo = phNo;
-      this.BrdMarks = BrdMarks;
+      this.brdMarks = brdMarks;
     }
   
     eligibleForPlacements=()=>{
         var minBrdMarks = 60;
         var reqAge = 18;
-        if(this.BrdMarks > minBrdMarks && this.age > reqAge)
+        if(this.brdMarks > minBrdMarks && this.age > reqAge)
         {
             console.log('name:'+this.name) 
             console.log('age:'+this.age)
             console.log('phNo.:'+this.phNo) 
-            console.log('board marks:'+this.BrdMarks) 
+            console.log('board marks:'+this.brdMarks) 
             console.log('')
         
         }    
