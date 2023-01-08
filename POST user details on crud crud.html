@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <title>Appointment App</title>
+</head>
+<body>
+<header id="main-header" class="bg-success text-white p-4 mb-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 align-self-center">
+            <h1>Book Appointment</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+   <div id="main" class="card card-body">
+    <form id="addForm" class="form-inline mb-3">
+      <label><b>Name:</b></label>
+      <input type="text" class="form-control mr-2" id="name">
+      <label><b>Email:</b></label>
+      <input type="text" class="form-control mr-2" id="email">
+      <label><b>Phone:</b></label>
+      <input type="text" class="form-control mr-2" id="phone">
+      <label><b>Date:</b></label>
+      <input type="date" class="form-control mr-2" id="date" value="2023-01-01">
+      <label><b>Time:</b></label>
+      <input type="time" class="form-control mr-2" id="time" min="09:00" max="21:00">
+
+      <input type="submit" class="btn btn-dark" value="Submit">
+    </form>
+    <h4 class="title">Appointments</h4>
+    <ul id="users" class="list-group"></ul>
+   </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.2/axios.min.js"></script>
+  <script src="GET user details on crud crud.js"></script>
+</body>
+</html>
