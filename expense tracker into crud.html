@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <title>Product Buying App</title>
+</head>
+<body>
+<header id="main-header" class="bg-success text-white p-4 mb-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 align-self-center">
+            <h1>Buy Products</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+   <div id="main" class="card card-body">
+    <form id="addForm" class="form-inline mb-3">
+      <label><b>Selling Price:</b></label>
+      <input type="text" class="form-control mr-2" id="sellingprice">
+      <label><b>Product Name:</b></label>
+      <input type="text" class="form-control mr-2" id="productname">
+      <label><b>Choose a category:</b></label>
+      <select id="category" class="form-control mr-2">
+        <option value=""></option>
+        <option value="Food">Food</option>
+        <option value="Electronics">Electronics</option>
+        <option value="Skincare">Skincare</option>
+      </select>
+      <input type="submit" class="btn btn-dark" value="Add Product">
+    </form>
+    <h4 class="title"><u>Products</u></h4>
+    <ul id="products" class="list-group">
+    </ul>
+   </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.6/axios.min.js"></script>
+  <script src="expense tracker into crudcrud .js"></script>
+</body>
+</html>
